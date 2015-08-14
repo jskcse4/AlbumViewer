@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:paddingLeft="@dimen/drawer_item_padding_left"
+        android:paddingRight="@dimen/drawer_item_padding_left"
+        android:background="@drawable/drawer_list_item_selector"
+        android:clickable="true"
+        android:layout_height="48dp">
+
+    <com.jskhaleel.uploading.ui.AVTextVew
+            android:id="@+id/menu_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/drawer_text_color_normal"
+            android:textSize="14sp"
+            android:fontFamily="@string/roboto_medium" />
+
+</RelativeLayout>
