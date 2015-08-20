@@ -26,6 +26,11 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.Light.NoActionBar" />
 
+        <activity android:name=".login.LoginActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Light.NoActionBar" />
+
     </application>
 
 </manifest>

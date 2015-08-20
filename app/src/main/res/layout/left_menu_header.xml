@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     android:background="?colorPrimary"
     android:gravity="bottom"
-    android:minHeight="100dp"
+    android:minHeight="150dp"
     android:orientation="vertical"
     android:paddingBottom="10dp"
     android:paddingEnd="5dp"
@@ -14,11 +14,13 @@
 
     <com.jskhaleel.uploading.ui.AVTextVew
         android:id="@+id/user_name"
-        style="?android:textAppearanceMedium"
+        android:textSize="@dimen/text_medium"
+        android:padding="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="end"
         android:layout_marginStart="10dp"
+        android:textStyle="bold"
         android:textColor="#ffffff" />
-
 
 </LinearLayout>

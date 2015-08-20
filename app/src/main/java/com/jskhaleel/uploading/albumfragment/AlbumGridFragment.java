@@ -9,11 +9,11 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.jskhaleel.uploading.R;
-import com.jskhaleel.uploading.base.BaseFragment;
+import com.jskhaleel.uploading.base.HomeBaseFragment;
 
 import java.util.ArrayList;
 
-public class AlbumGridFragment extends BaseFragment {
+public class AlbumGridFragment extends HomeBaseFragment {
 
     private RecyclerView mRecyclerView;
 

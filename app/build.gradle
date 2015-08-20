@@ -8,7 +8,7 @@ buildscript {
 
 android {
     compileSdkVersion 22
-    buildToolsVersion "23.0.0 rc3"
+    buildToolsVersion "23"
 
     defaultConfig {
         applicationId "com.jskhaleel.uploading.albumviewer"

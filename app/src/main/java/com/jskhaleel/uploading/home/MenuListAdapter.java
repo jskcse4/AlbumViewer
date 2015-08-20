@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.RelativeLayout;
 
 import com.jskhaleel.uploading.R;
 import com.jskhaleel.uploading.ui.AVTextVew;
@@ -16,6 +17,7 @@ public class MenuListAdapter extends BaseAdapter{
     private ArrayList<MenuItemView> mItems;
     private Context context;
     private OnMenuClickListener onMenuClickListener;
+
     public MenuListAdapter(ArrayList<String> menuArray, Context context, OnMenuClickListener onMenuClickListener) {
         this.mItems = getItems(menuArray);
         this.context = context;
@@ -61,17 +63,17 @@ public class MenuListAdapter extends BaseAdapter{
             if(convertView == null) {
                 convertView = mInflator.inflate(R.layout.left_menu_item, parent, false);
             }
-
+            final RelativeLayout menuTextLayout = (RelativeLayout) convertView.findViewById(R.id.rl_menu_item);
             final AVTextVew menuText = (AVTextVew) convertView.findViewById(R.id.menu_item);
 
             menuText.setText(item);
-            menuText.setTag(item);
+            menuTextLayout.setTag(item);
 
-            menuText.setOnClickListener(new View.OnClickListener() {
+            menuTextLayout.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     if(onMenuClickListener != null) {
-                        onMenuClickListener.onMenuClick(menuText.getTag().toString());
+                        onMenuClickListener.onMenuClick(menuTextLayout.getTag().toString());
                     }
                 }
             });
