@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/left_menu_header"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -11,8 +12,19 @@
     android:paddingEnd="5dp"
     android:paddingStart="15dp">
 
+    <com.jskhaleel.albumviewer.ui.AVTextVew
+        android:id="@+id/text_hello"
+        android:textSize="@dimen/text_medium"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:layout_marginStart="10dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff" />
 
-    <com.jskhaleel.uploading.ui.AVTextVew
+
+    <com.jskhaleel.albumviewer.ui.AVTextVew
         android:id="@+id/user_name"
         android:textSize="@dimen/text_medium"
         android:padding="5dp"

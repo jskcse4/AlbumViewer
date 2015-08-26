@@ -10,7 +10,20 @@
     <string name="sample_videos">Sample Videos</string>
     <string name="sample_album">Sample Album</string>
     <string name="contact">Contact</string>
-    <string name="pincode">I Have Pincode</string>
+    <string name="have_pincode">I Have Pincode</string>
     <string name="my_album">My Album</string>
     <string name="logout">Logout</string>
+
+    <!--Login-->
+    <string name="user_name">User Name</string>
+    <string name="pincode">Pincode</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot pincode?</string>
+    <string name="alert_pincode">Pincode should not be blank!</string>
+    <string name="alert_username">Username should not be blank!</string>
+    <string name="loading">Loading&#8230;</string>
+    <string name="hello">Hello,</string>
+    <string name="there">there!!!</string>
+    <string name="nothing_to_list">Sorry, We don\'t have anything to list!!!</string>
+
 </resources>
